@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>The popularity of Video Game Genres</title>
     <h1>F20DV - CW2: Understanding the Video Game Market</h1>
-    <center><p>In this data visualisation dashboradm I explore trends in video games market and what are some of the most popular genres</p></center>
-</head>
-<body>
-	<div class="container">
-		<div id="my_dataviz" class="box">
-            <h3>Total sale per Platform</h3>
-            <center><p>This visualisation showcases how much each region makes money wise, to understand which market is the strongest when it comes to sales</p></center>
-            <div>
-                <label for="region-select">Platform:</label>
-                <select id="dest" onchange="main()">
-                    <option value="DS">DS</option>
-                    <option value="PSV">PSV</option>
-                    <option value="PS4">PS4</option>
-                    <option value="Wii">Wii</option>
-                </select>
-            </div>
-            <div>
-                <label for="year-select">Year:</label>
-                <select id="year-select" onchange="main()">
-                    <option value="2006">2006</option>
-                    <option value="2008">2008</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                </select>
-            </div>
-            <div id="table-div"></div>
-            <script src="v1_barGraph.js"></script>
-		</div>
-		<div class="box">Box 2</div>
-		<div class="box">Box 3</div>
-	</div>
-</body>
+    <center>
+      <p>
+        In this data visualisation dashboradm I explore trends in video games
+        market and what are some of the most popular genres
+      </p>
+    </center>
+  </head>
+  <body>
+    <div class="container">
+      <div id="my_dataviz" class="box">
+        <h3>Total sale per Platform</h3>
+        <center>
+          <p>
+            This visualisation showcases how much each region makes money wise,
+            to understand which market is the strongest when it comes to sales
+          </p>
+        </center>
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+        <script src="v1_barGraph.js"></script>
+        <p>Using </p>
+      </div>
+
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
 </html>
